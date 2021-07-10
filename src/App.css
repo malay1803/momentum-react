@@ -99,3 +99,11 @@ h3 {
 .quote{
   margin-bottom: -20px;
 }
+
+.author{
+  font-size: 15px;
+}
+
+.fa-twitter{
+  color: white;
+}
