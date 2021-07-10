@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .background {
   background-size: cover;
@@ -8,28 +8,94 @@
   margin: 0px;
 }
 
-.container{
-    display: grid;
-    align-items: center;
-    place-content: center;
-    grid-template-rows: 150px;
-    height: 100vh;
-    grid-gap: 00px;
-    font-family: 'Poppins', sans-serif;
+.container {
+  position: relative;
+  display: grid;
+  grid-gap: -100px;
+  align-items: center;
+  place-content: center;
+  grid-template-rows: 150px;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
 }
 
-h1{
-    color: white;
-    font-size: 200px;
-    grid-template-rows: 10px;
+h1 {
+  letter-spacing: 10px;
+  color: white;
+  font-size: 150px;
+  grid-template-rows: 10px;
+  line-height: 150px;
+  text-align: center;
+  height: 5px;
 }
 
-h3{
-    color: white;
-    text-align: center;
-    font-size: 30px;
+h2 {
+  /* top: 120px; */
+  height: 10px;
+  color: white;
+  text-align: center;
+  font-size: 30px;
 }
 
+h3 {
+  top: -100px;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  height: 0px;
+}
 
+.focus {
+  font-size: 1.5rem;
+  color: white;
+  background-color: transparent;
+  text-align: center;
+  padding: 20px 0 10px 0;
+  border: none;
+  border-bottom: 3px solid white;
+  outline: none;
+  width: 100%;
+  cursor:none
+}
 
+.buttons {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
 
+.button {
+  font-weight: bold;
+  height: 2rem;
+  font-size: 1rem;
+  border: none;
+  margin-top: 20px;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.addButton {
+  width: 6rem;
+}
+
+.remButton {
+  width: 7rem;
+}
+
+.addButton:hover,
+.remButton:hover {
+  background-color: #bbbbbb;
+}
+
+.quoteDiv{
+  position: absolute;
+  color: white;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+}
+
+.quote{
+  margin-bottom: -20px;
+}

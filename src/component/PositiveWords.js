@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../App.css";
 
 const PositiveWords = () => {
+  const [phrase, setPhrase] = useState("Accept Yourself");
+
   let phrases = [
     "Accept Yourself",
     "Act Justly",
@@ -33,10 +35,16 @@ const PositiveWords = () => {
     "Enjoy Today",
   ];
 
-  let randomPhrase = Math.floor(Math.random() * phrases.length) + 1;
-  console.log(phrases[randomPhrase]);
+  const getPhase = () => {
+    let randomPhrase = Math.floor(Math.random() * phrases.length) + 1;
+    setPhrase(phrases[randomPhrase])
+  };
 
-  return <h3>{phrases[randomPhrase]}</h3>;
+  useEffect(()=>{
+    getPhase()
+  },[])
+
+  return <h3>{phrase}</h3>;
 };
 
 export default PositiveWords;

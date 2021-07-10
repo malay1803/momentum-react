@@ -2,12 +2,15 @@ import React, { useState, useEffect } from "react";
 import unsplash from "./axios/unsplash";
 import Time from "./component/Time";
 import PositiveWords from "./component/PositiveWords";
+import AddFocus from "./component/AddFocus";
 import "./App.css";
+import Quote from "./component/Quote";
 
 function App() {
   const [photo, setPhoto] = useState([]);
+
   const pageNo = Math.floor(Math.random() * 20) + 1;
-  const choseIMG = Math.floor(Math.random() * 30) + 1;
+  const choseIMG = Math.floor(Math.random() * 10) + 1;
 
   let getPhoto = async () => {
     try {
@@ -16,7 +19,8 @@ function App() {
           page: pageNo,
         },
       });
-      setPhoto(response.data.results[choseIMG].urls.full);
+      const photoLink = response.data.results[choseIMG].urls.full;
+      setPhoto(photoLink);
     } catch (error) {
       console.log(error);
     }
@@ -24,8 +28,7 @@ function App() {
 
   useEffect(() => {
     getPhoto();
-  },[]);
-  // getPhoto();
+  }, []);
 
   return (
     <div
@@ -35,8 +38,14 @@ function App() {
       }}
     >
       <div className="container">
-        <Time />
+        <div className="time">
+          <Time />
+        </div>
         <PositiveWords />
+        <AddFocus />
+        <div className="quoteDiv">
+          <Quote />
+        </div>
       </div>
     </div>
   );
