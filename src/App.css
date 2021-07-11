@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+/* css for app background  */
 .background {
   background-size: cover;
   background-position: center center;
@@ -20,6 +21,7 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* Time style  */
 h1 {
   letter-spacing: 10px;
   color: white;
@@ -30,14 +32,15 @@ h1 {
   height: 5px;
 }
 
+/* AddFocus heading css  */
 h2 {
-  /* top: 120px; */
   height: 10px;
   color: white;
   text-align: center;
   font-size: 30px;
 }
 
+/* PositiveWords css  */
 h3 {
   top: -100px;
   color: white;
@@ -46,6 +49,7 @@ h3 {
   height: 0px;
 }
 
+/* Add focus input field css  */
 .focus {
   font-size: 1.5rem;
   color: white;
@@ -59,6 +63,7 @@ h3 {
   cursor:none
 }
 
+/* AddFocus css  */
 .buttons {
   display: grid;
   place-items: center;
@@ -89,6 +94,7 @@ h3 {
   font-weight: bold;
 }
 
+/* Quote css  */
 .quoteDiv{
   position: absolute;
   color: white;
@@ -114,6 +120,7 @@ h3 {
   color: #1DA1F2;
 }
 
+/* weather css  */
 .weather{
   color: white;
   position: absolute;
@@ -144,6 +151,7 @@ h3 {
   height: 70px;
 }
 
+/* SearchTab css  */
 .search{
   background-color: transparent;
   border: none;
@@ -160,7 +168,6 @@ h3 {
 
 .searchBar{
   width: 15rem;
-  /* background-color: red; */
   position: absolute;
   top: 20px;
   left: 50px;
@@ -171,7 +178,6 @@ h3 {
 
 select {
   font-family: 'Poppins', 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
-  /* font-weight: 900; */
   outline: none;
   background-color: transparent;
   color: white;

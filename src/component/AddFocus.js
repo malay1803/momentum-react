@@ -35,7 +35,6 @@ const AddFocus = () => {
     <>
       <h2>What is your main Focus for Today?</h2>
       <input
-        // style={{ display: !localStorage.getItem("focus") ? "none" : "block" }}
         className="focus"
         type="text"
         value={focus}
