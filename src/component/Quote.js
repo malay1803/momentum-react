@@ -22,18 +22,18 @@ const Quote = () => {
   }, []);
 
   return (
-    <>
+    <div className="quoteDiv">
       <p className="quote">"{quote}"</p>
       <p className="author">
         -{author}{" "}
         <a
           className="twitterLink"
-          href={`http://twitter.com/intent/tweet?text=${quote}`}
+          href={`http://twitter.com/intent/tweet?text=%22${quote}%22+-${author}`}
         >
           <i className="fab fa-twitter"></i>
         </a>
       </p>
-    </>
+    </div>
   );
 };
 

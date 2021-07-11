@@ -21,7 +21,6 @@ const PositiveWords = () => {
     "Be A Beautiful Chaos",
     "Breathe Deeply",
     "But Why?",
-    "Call Me",
     "Carpe Diem",
     "Cherish Today",
     "Just Chill Out",

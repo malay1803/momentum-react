@@ -6,15 +6,23 @@ const Time = () => {
 
   const updateTime = () => {
     let currHour = new Date().getHours();
-    let currMin = ('0'+new Date().getMinutes()).slice(-2);
-    let showTime = `${currHour}:${currMin}`
-    setTime(showTime)
+    // code for making time appear in 12 hour format
+    // if (currHour > 12){
+    //   currHour = currHour - 12
+      if(currHour<10){
+        currHour = '0' + currHour
+      }
+    // }
+    let currMin = ("0" + new Date().getMinutes()).slice(-2);
+    let showTime = `${currHour}:${currMin}`;
+    setTime(showTime);
   };
-// console.log(setInterval(updateTime, 1000));
-  setInterval(updateTime, 1000)
+  setInterval(updateTime, 1000);
 
   return (
+    <div className="time">
       <h1>{time}</h1>
+    </div>
   );
 };
 

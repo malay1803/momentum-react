@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Time from "./component/Time";
 import PositiveWords from "./component/PositiveWords";
 import AddFocus from "./component/AddFocus";
 import "./App.css";
 import Quote from "./component/Quote";
+import Weather from "./component/Weather";
+import SearchTab from "./component/SearchTab";
 
 function App() {
   return (
@@ -14,14 +16,12 @@ function App() {
       }}
     >
       <div className="container">
-        <div className="time">
-          <Time />
-        </div>
+        <Time />
         <PositiveWords />
         <AddFocus />
-        <div className="quoteDiv">
-          <Quote />
-        </div>
+        <Quote />
+        <Weather />
+        <SearchTab />
       </div>
     </div>
   );

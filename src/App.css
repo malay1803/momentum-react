@@ -66,13 +66,14 @@ h3 {
 }
 
 .button {
-  font-weight: bold;
+  /* font-weight: bold; */
   height: 2rem;
   font-size: 1rem;
   border: none;
   margin-top: 20px;
   align-items: center;
   border-radius: 20px;
+  transition: .5s all;
 }
 
 .addButton {
@@ -86,6 +87,8 @@ h3 {
 .addButton:hover,
 .remButton:hover {
   background-color: #bbbbbb;
+  font-weight: bold;
+  /* color: red; */
 }
 
 .quoteDiv{
@@ -106,4 +109,93 @@ h3 {
 
 .fa-twitter{
   color: white;
+  transition: .5s all;
 }
+
+.fa-twitter:hover{
+  color: #1DA1F2;
+}
+
+.weather{
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 100px;
+}
+
+.weather .city{
+  font-size: 1.2rem;
+  float: right;
+  margin-top: -60px;
+}
+
+.weather .temp{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.weather .temp p{
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.weather .temp img{
+  width: 60px;
+  height: 70px;
+}
+
+.search{
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #E1E8ED;
+  outline: none;
+  font-size: 18px;
+  padding: 10px 10px 5px 15px;
+  color: white;
+}
+
+.searchBar i{
+  color: #E1E8ED;
+}
+
+.searchBar{
+  width: 15rem;
+  /* background-color: red; */
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+select {
+  font-family: 'Poppins', 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+  /* font-weight: 900; */
+  outline: none;
+  background-color: transparent;
+  color: white;
+  border: none;
+  width: 45px;
+  height: 25px;
+  font-size: 20px;
+  text-align: center;
+  text-align-last: justify;
+}
+
+select option{
+  font-size: 15px;
+  color: #444645;
+  background: #ddd;
+  border: 5px solid red;
+  text-align: center;
+  margin: 0 auto;
+}
+
+select:hover {
+  color: #444645;
+  background: #ddd;
+  border-radius: 5px;
+  }
