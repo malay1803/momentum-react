@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/momentum-clone-react/static/css/main.a9461b9c.chunk.css",
+    "main.js": "/momentum-clone-react/static/js/main.25b704ee.chunk.js",
+    "main.js.map": "/momentum-clone-react/static/js/main.25b704ee.chunk.js.map",
+    "runtime-main.js": "/momentum-clone-react/static/js/runtime-main.2b87bfa2.js",
+    "runtime-main.js.map": "/momentum-clone-react/static/js/runtime-main.2b87bfa2.js.map",
+    "static/js/2.8cf39186.chunk.js": "/momentum-clone-react/static/js/2.8cf39186.chunk.js",
+    "static/js/2.8cf39186.chunk.js.map": "/momentum-clone-react/static/js/2.8cf39186.chunk.js.map",
+    "index.html": "/momentum-clone-react/index.html",
+    "static/css/main.a9461b9c.chunk.css.map": "/momentum-clone-react/static/css/main.a9461b9c.chunk.css.map",
+    "static/js/2.8cf39186.chunk.js.LICENSE.txt": "/momentum-clone-react/static/js/2.8cf39186.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2b87bfa2.js",
+    "static/js/2.8cf39186.chunk.js",
+    "static/css/main.a9461b9c.chunk.css",
+    "static/js/main.25b704ee.chunk.js"
+  ]
+}
