@@ -66,7 +66,6 @@ h3 {
 }
 
 .button {
-  /* font-weight: bold; */
   height: 2rem;
   font-size: 1rem;
   border: none;
@@ -88,7 +87,6 @@ h3 {
 .remButton:hover {
   background-color: #bbbbbb;
   font-weight: bold;
-  /* color: red; */
 }
 
 .quoteDiv{
