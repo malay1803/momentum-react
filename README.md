@@ -1,4 +1,4 @@
-# momentum-react
+# momentum-clone-react
 
 Momentum is a famous personal dashboard used by many coders in general. I tried to make a clone with React using hooks and various apis to practice react.
 
